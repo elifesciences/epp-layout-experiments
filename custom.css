@@ -1,0 +1,17 @@
+a {
+  color: #087acc;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+p a:not(.additional-asset__link--download):not(.asset-viewer-inline__download_all_link):not(.asset-viewer-inline__open_link):not(.reference__title):not(.doi):not(.reference__authors_link):not(.trigger):not(.popup__link):not(.see-more-link) {
+  border-bottom: 1px dotted #212121;
+  color: #212121;
+  text-decoration: none;
+}
+
+.article-section__body ul:not(.reference__abstracts) a:not(.article-download-links-list__secondary_link) {
+  border-bottom: 1px dotted $color;
+  color: #212121;
+  text-decoration: none;
+}
