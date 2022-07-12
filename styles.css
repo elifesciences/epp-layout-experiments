@@ -28,6 +28,10 @@ html {
     grid-column: 1/10;
     grid-row: 2;
   }
+  .content-header__eight-column {
+    grid-column: 1/8;
+    grid-row: 2;
+  }
   .secondary-column {
     grid-column: 10/13;
     grid-row: 2/4;
@@ -35,6 +39,18 @@ html {
   .primary-column {
     grid-column: 1/10;
     grid-row: 3;
+  }
+
+  .primary-column__eight-column {
+    grid-column: 1/8;
+    grid-row: 3;
+
+  }
+
+  .secondary-column__four-column {
+    grid-column: 9/13;
+    grid-row: 2/4;
+    margin: 0;
   }
 }
 @media only all and (min-width: 1000px) {
@@ -385,6 +401,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 230px;
+  }
+
+  .secondary-column__four-column .article-status  {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: unset;
   }
 }
 @media only all and (min-width: 768px) {
