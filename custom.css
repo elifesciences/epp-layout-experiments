@@ -15,3 +15,43 @@ p a:not(.additional-asset__link--download):not(.asset-viewer-inline__download_al
   color: #212121;
   text-decoration: none;
 }
+
+content-header {
+  padding-bottom: 24px;
+}
+
+.tabbed-nav__main {
+  grid-column: 1/10;
+  grid-row: 1;
+  margin-bottom: 36px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabbed-nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.tabbed-nav__list_item {
+  color: #888;
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  list-style: none;
+  padding: 24px 18px;
+}
+
+.tabbed-nav__list_item.active {
+  border-bottom: 4px solid #cf0c4e;
+  color: #212121;
+  list-style: none;
+  padding: 24px 18px;
+}
+
+.tabbed-nav__list_item a {
+  color: #888;
+}
+
+.tabbed-nav__list_item a:hover {
+  color: #212121;
+}
