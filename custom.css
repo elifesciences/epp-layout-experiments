@@ -34,6 +34,13 @@ content-header {
   margin: 0;
 }
 
+.tabbed-nav__list_secondary_column {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
 .tabbed-nav__list_item {
   color: #888;
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
@@ -42,10 +49,14 @@ content-header {
 }
 
 .tabbed-nav__list_item.active {
-  border-bottom: 4px solid #cf0c4e;
+  border-bottom: 4px solid #087acc;
   color: #212121;
   list-style: none;
   padding: 24px 18px;
+}
+
+.tabbed-nav__list_item.active a {
+  color: #212121;
 }
 
 .tabbed-nav__list_item a {

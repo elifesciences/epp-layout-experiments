@@ -482,6 +482,11 @@ img {
     margin-right: auto;
     max-width: 230px;
   }
+
+  .secondary-column__four-column .review-timeline {
+    margin: 0;
+    max-width: unset;
+  }
 }
 
 .review-timeline__list {
@@ -553,6 +558,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 230px;
+  }
+
+  .secondary-column__four-column .article-metadata {
+    margin: 0;
+    max-width: unset;
   }
 }
 
