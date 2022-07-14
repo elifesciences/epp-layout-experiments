@@ -139,6 +139,10 @@ figure {
   max-width: 69.625rem;
 }
 
+.secondary-column__four-column .jump-menu-container {
+  margin: 0;
+}
+
 .jump-menu-list {
   list-style: none;
   margin-left: -2px;
