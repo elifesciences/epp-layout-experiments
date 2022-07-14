@@ -386,6 +386,8 @@ img {
   }
 }
 .article-details {
+  padding-bottom: 100px;
+  overflow-y: auto;
   position: sticky;
   top: 96px;
 }

@@ -55,7 +55,7 @@ content-header {
   padding: 24px 18px;
 }
 
-.tabbed-nav__list_item.active a {
+.tabbed-nav__list_item.active a, .tabbed-nav__list_item a:hover {
   color: #212121;
 }
 
@@ -63,6 +63,27 @@ content-header {
   color: #888;
 }
 
-.tabbed-nav__list_item a:hover {
-  color: #212121;
+.ontent__one {
+  grid-row: 2;
+}
+
+.content__two {
+  grid-row: 3;
+}
+
+.content__three {
+  grid-row: 4;
+}
+
+.content__one, .content__two, .content__three {
+  display: none;
+}
+
+.show, .active {
+  display: block;
+}
+
+.content-container {
+  display: block;
+  height: 200px;
 }
