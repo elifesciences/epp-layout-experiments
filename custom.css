@@ -20,6 +20,10 @@ content-header {
   padding-bottom: 24px;
 }
 
+.person {
+  font-size: 14px;
+}
+
 .tabbed-nav__main {
   grid-column: 1/10;
   grid-row: 1;
@@ -63,7 +67,7 @@ content-header {
   color: #888;
 }
 
-.ontent__one {
+.content__one {
   grid-row: 2;
 }
 
@@ -80,7 +84,7 @@ content-header {
 }
 
 .show, .active {
-  display: block;
+  display: grid;
 }
 
 .content-container {
