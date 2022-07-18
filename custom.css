@@ -77,6 +77,8 @@ content-header {
 
 .content__three {
   grid-row: 4;
+  height: 300px;
+  overflow-y: scroll;
 }
 
 .content__one, .content__two, .content__three {
