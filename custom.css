@@ -89,6 +89,10 @@ content-header {
   display: grid;
 }
 
+.hide {
+  display: none;
+}
+
 .content-container {
   display: block;
   height: 200px;
