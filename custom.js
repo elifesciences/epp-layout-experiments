@@ -1,5 +1,3 @@
-const exampleFour = document.querySelector('.example-four');
-
 const tabOne = document.querySelector('.tab-one');
 const tabTwo = document.querySelector('.tab-two');
 const tabThree = document.querySelector('.tab-three');
@@ -10,7 +8,6 @@ const contentThree = document.querySelector('.content__three');
 
 const articleStatus = document.querySelector('.article-status');
 const reviewTimeline = document.querySelector('.review-timeline');
-const articleMetadata = document.querySelector('.article-metadata');
 contentOne.classList.add('show');
 
 tabOne.addEventListener('click', function(event) {
@@ -52,12 +49,10 @@ function secondaryColumnCollapse() {
 
   if (bounding.top <= 0 ) {
     articleStatus.classList.add('hide');
-    articleMetadata.classList.add('hide');
     reviewTimeline.classList.add('hide');
     console.log('yeehawwww');
   } else {
     articleStatus.classList.remove('hide');
-    articleMetadata.classList.remove('hide');
     reviewTimeline.classList.remove('hide');
   };
 

@@ -86,7 +86,7 @@ html {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 24px;
-    max-width: 1296px;
+    max-width: 1224px;
   }
 }
 img {
@@ -391,7 +391,7 @@ figure {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 24px;
-    max-width: 1296px;
+    max-width: 1224px;
   }
 }
 .article-details {
