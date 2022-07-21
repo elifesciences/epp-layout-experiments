@@ -27,6 +27,7 @@ html {
   .content-header {
     grid-column: 1/10;
     grid-row: 2;
+    padding-right: 36px;
   }
   .content-header__eight-column {
     grid-column: 1/8;
@@ -62,7 +63,7 @@ html {
   }
   .main-content-area {
     grid-column: 3/10;
-    padding: 0 48px;
+    padding: 0 36px 0 48px;
   }
 
   main {
@@ -225,6 +226,11 @@ figure {
   margin: 0 0 2rem;
   padding-bottom: 36px;
   text-align: left;
+}
+
+.example-three .content-header {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .content-header__title {
@@ -407,11 +413,11 @@ figure {
   padding-bottom: 24px;
   margin-top: 48px;
 }
+
 @media only all and (min-width: 768px) {
   .article-status {
     margin-left: auto;
-    margin-right: auto;
-    max-width: 230px;
+    max-width: 240px;
   }
 
   .secondary-column__four-column .article-status  {
@@ -484,11 +490,14 @@ figure {
   margin-top: 24px;
   padding-bottom: 24px;
 }
+
+.secondary-column__four-column .review-timeline {
+  border-bottom: 0;
+}
 @media only all and (min-width: 768px) {
   .review-timeline {
     margin-left: auto;
-    margin-right: auto;
-    max-width: 230px;
+    max-width: 240px;
   }
 
   .secondary-column__four-column .review-timeline {
@@ -557,15 +566,13 @@ figure {
 }
 
 .article-metadata {
-  border-bottom: 1px solid rgb(224, 224, 224);
   margin-top: 24px;
   padding-bottom: 24px;
 }
 @media only all and (min-width: 768px) {
   .article-metadata {
     margin-left: auto;
-    margin-right: auto;
-    max-width: 230px;
+    max-width: 240px;
   }
 
   .secondary-column__four-column .article-metadata {
@@ -720,6 +727,8 @@ figure {
 
 .example-two .review-list {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .review-list__item {
