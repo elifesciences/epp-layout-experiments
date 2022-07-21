@@ -25,11 +25,15 @@ content-header {
 }
 
 .tabbed-nav__main {
+  border-bottom: 1px solid #e0e0e0;
   grid-column: 1/10;
   grid-row: 1;
   margin-bottom: 36px;
-  width: 100%;
-  border-bottom: 1px solid #e0e0e0;
+  margin-right: 36px;
+}
+
+.secondary-column__four-column .tabbed-nav__main {
+  margin-right: 0;
 }
 
 .tabbed-nav__list {
@@ -77,7 +81,9 @@ content-header {
 
 .content__three {
   grid-row: 4;
-  height: 300px;
+}
+
+.secondary-column__four-column .content__three {
   overflow-y: scroll;
 }
 

@@ -6,8 +6,6 @@ const contentOne = document.querySelector('.content__one');
 const contentTwo = document.querySelector('.content__two');
 const contentThree = document.querySelector('.content__three');
 
-const articleStatus = document.querySelector('.article-status');
-const reviewTimeline = document.querySelector('.review-timeline');
 contentOne.classList.add('show');
 
 tabOne.addEventListener('click', function(event) {
@@ -42,26 +40,3 @@ tabThree.addEventListener('click', function(event) {
   contentThree.classList.add('show');
 
 })
-
-function secondaryColumnCollapse() {
-  const evaluationPosition = document.querySelector('.evaluation-summary__header');
-  let bounding = evaluationPosition.getBoundingClientRect();
-
-  if (bounding.top <= 0 ) {
-    articleStatus.classList.add('hide');
-    reviewTimeline.classList.add('hide');
-    console.log('yeehawwww');
-  } else {
-    articleStatus.classList.remove('hide');
-    reviewTimeline.classList.remove('hide');
-  };
-
-}
-
-function detectColumnPosition() {
-  // possibly long task
-  setInterval(detectColumnPosition, 500);
-  secondaryColumnCollapse();
-}
-
-detectColumnPosition();
