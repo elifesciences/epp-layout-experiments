@@ -6,8 +6,6 @@ const contentOne = document.querySelector('.content__one');
 const contentTwo = document.querySelector('.content__two');
 const contentThree = document.querySelector('.content__three');
 
-const articleStatus = document.querySelector('.article-status');
-const reviewTimeline = document.querySelector('.review-timeline');
 contentOne.classList.add('show');
 
 tabOne.addEventListener('click', function(event) {
