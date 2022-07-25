@@ -927,22 +927,28 @@ figure {
   grid-column: 1/2;
   grid-row: 1;
   padding-right: 24px;
+  width: 93px;
   border-right: 1px solid #e0e0e0;
 }
 
 .top-navigation__menu {
   grid-column: 2/8;
   grid-row: 1;
+  margin-top: 6px;
 }
 
-.main-navigation {
+.navigation {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.main-navigation__item {
+.navigation-misc {
+  justify-content: flex-end;
+}
+
+.navigation__item {
   color: #292929;
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -951,12 +957,37 @@ figure {
   padding: 0 24px 0 0;
 }
 
-.main-navigation__item a {
+.navigation__item a {
   color: #292929;
 }
 
 .top-navigation__misc {
   grid-column: 8/13;
   grid-row: 1;
+}
+
+.misc-navigation__search {
+  background: url(images/search.svg) no-repeat right 0;
+  margin-right: 24px;
+}
+
+.misc-navigation__alerts {
+  background: url(images/alerts.svg) no-repeat right 0;
+  margin-right: 24px;
+}
+
+.misc-navigation__search a, .misc-navigation__alerts a {
+  padding-right: 6px;
+}
+
+.misc-navigation__block-item {
+  background-color: #087acc;
+  color: #fff;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.misc-navigation__block-item a {
+  color: #fff;
 }
 
