@@ -3,6 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+}
+
+.main-content-grid {
+  min-width: 0; /* Fix for bug in Firefox */
+}
+
 .grid-container {
   padding-left: 24px;
   padding-right: 24px;
