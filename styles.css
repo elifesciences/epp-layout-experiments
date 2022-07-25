@@ -642,22 +642,6 @@ figure {
   color: rgb(8, 122, 204);
 }
 
-.banner {
-  border-bottom: 1px solid rgb(224, 224, 224);
-  grid-column: 1/13;
-  height: 94px;
-  margin-bottom: 48px;
-}
-.banner::before {
-  background-image: url(https://elifesciences.org/assets/patterns/img/patterns/organisms/elife-logo-xs.fd623d00.svg);
-  background-size: 79px 30px;
-  content: "";
-  display: inline-block;
-  height: 30px;
-  width: 79px;
-  margin-top: 30px;
-}
-
 .article-review-status {
   border-bottom: 1px solid rgb(224, 224, 224);
   margin-top: 24px;
@@ -913,3 +897,81 @@ figure {
 .msa_item:last-child {
   margin: 0;
 }
+
+.top-navigation {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  grid-column-gap: 24px;
+  margin: 48px 0 72px;
+  max-width: 1200px;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1;
+  padding-right: 24px;
+  width: 93px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.top-navigation__menu {
+  grid-column: 2/8;
+  grid-row: 1;
+  margin-top: 6px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-misc {
+  justify-content: flex-end;
+}
+
+.navigation__item {
+  color: #292929;
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0 24px 0 0;
+}
+
+.navigation__item a {
+  color: #292929;
+}
+
+.top-navigation__misc {
+  grid-column: 8/13;
+  grid-row: 1;
+}
+
+.misc-navigation__search {
+  background: url(images/search.svg) no-repeat right 0;
+  margin-right: 24px;
+}
+
+.misc-navigation__alerts {
+  background: url(images/alerts.svg) no-repeat right 0;
+  margin-right: 24px;
+}
+
+.misc-navigation__search a, .misc-navigation__alerts a {
+  padding-right: 6px;
+}
+
+.misc-navigation__block-item {
+  background-color: #087acc;
+  color: #fff;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.misc-navigation__block-item a {
+  color: #fff;
+}
+
