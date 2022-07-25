@@ -642,22 +642,6 @@ figure {
   color: rgb(8, 122, 204);
 }
 
-.banner {
-  border-bottom: 1px solid rgb(224, 224, 224);
-  grid-column: 1/13;
-  height: 94px;
-  margin-bottom: 48px;
-}
-.banner::before {
-  background-image: url(https://elifesciences.org/assets/patterns/img/patterns/organisms/elife-logo-xs.fd623d00.svg);
-  background-size: 79px 30px;
-  content: "";
-  display: inline-block;
-  height: 30px;
-  width: 79px;
-  margin-top: 30px;
-}
-
 .article-review-status {
   border-bottom: 1px solid rgb(224, 224, 224);
   margin-top: 24px;
@@ -919,7 +903,7 @@ figure {
   grid-template-columns: repeat(12, 1fr);
   grid-column: 1/13;
   grid-column-gap: 24px;
-  margin: 48px 0 78px;
+  margin: 48px 0 72px;
   max-width: 1200px;
 }
 
