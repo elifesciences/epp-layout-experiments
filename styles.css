@@ -1001,3 +1001,9 @@ figure {
   color: #fff;
 }
 
+.misc-navigation__block-item .button__submit {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
