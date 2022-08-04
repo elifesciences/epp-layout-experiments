@@ -911,6 +911,10 @@ figure {
   padding: 3px 10px;
 }
 
+.label_item a {
+  color: #212121;
+}
+
 .msa_item:last-child {
   margin: 0;
 }
@@ -964,6 +968,7 @@ figure {
 
 .navigation__item a {
   color: #292929;
+  font-weight: bold;
 }
 
 .top-navigation__misc {
