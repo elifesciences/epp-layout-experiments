@@ -19,7 +19,7 @@ tabOne.addEventListener('click', function(event) {
   contentTwo.classList.remove('show');
   contentThree.classList.remove('show');
   console.log('yum');
-})
+});
 
 tabTwo.addEventListener('click', function(event) {
   event.preventDefault();
@@ -30,7 +30,7 @@ tabTwo.addEventListener('click', function(event) {
   contentTwo.classList.add('show');
   contentThree.classList.remove('show');
   console.log('yum2');
-})
+});
 
 tabThree.addEventListener('click', function(event) {
   event.preventDefault();
@@ -40,8 +40,7 @@ tabThree.addEventListener('click', function(event) {
   contentOne.classList.remove('show');
   contentTwo.classList.remove('show');
   contentThree.classList.add('show');
-
-})
+});
 
 function secondaryColumnCollapse() {
   const evaluationPosition = document.querySelector('.evaluation-summary__header');
@@ -51,17 +50,11 @@ function secondaryColumnCollapse() {
     articleStatus.classList.add('hide');
     reviewTimeline.classList.add('hide');
     console.log('yeehawwww');
+    clearInterval(secondaryColumnCollapse);
   } else {
     articleStatus.classList.remove('hide');
     reviewTimeline.classList.remove('hide');
   };
+};
 
-}
-
-function detectColumnPosition() {
-  // possibly long task
-  setInterval(detectColumnPosition, 500);
-  secondaryColumnCollapse();
-}
-
-detectColumnPosition();
+setInterval(secondaryColumnCollapse, 1000);
