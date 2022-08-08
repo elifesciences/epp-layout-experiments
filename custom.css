@@ -25,11 +25,14 @@ content-header {
 }
 
 .tabbed-nav__main {
+  background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   grid-column: 1/10;
   grid-row: 1;
   margin-bottom: 36px;
   margin-right: 36px;
+  position: sticky;
+  top: 0;
 }
 
 .secondary-column__four-column .tabbed-nav__main {
