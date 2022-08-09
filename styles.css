@@ -1064,3 +1064,45 @@ td {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
+
+.review-of {
+  background-color: rgb(247, 249, 250);
+  padding: 24px;
+  position: sticky;
+  top: 35px;
+}
+
+.review-of__heading {
+  color: rgb(118, 118, 118);
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.review-of__article_link {
+  color: rgb(33, 33, 33);
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.review-of__authors {
+  list-style: none;
+  padding: 0;
+}
+
+.review-of__author {
+  color: rgb(33, 33, 33);
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline;
+}
+
+.review-of__author::after {
+  content: ", ";
+}
