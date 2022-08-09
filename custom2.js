@@ -42,19 +42,15 @@ tabThree.addEventListener('click', function(event) {
   contentThree.classList.add('show');
 });
 
-function secondaryColumnCollapse() {
+document.addEventListener('scroll', function() {
   const evaluationPosition = document.querySelector('.evaluation-summary__header');
   let bounding = evaluationPosition.getBoundingClientRect();
 
   if (bounding.top <= 0 ) {
     articleStatus.classList.add('hide');
     reviewTimeline.classList.add('hide');
-    console.log('yeehawwww');
-    clearInterval(secondaryColumnCollapse);
   } else {
     articleStatus.classList.remove('hide');
     reviewTimeline.classList.remove('hide');
   };
-};
-
-setInterval(secondaryColumnCollapse, 1000);
+})
