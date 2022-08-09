@@ -86,10 +86,6 @@ content-header {
   grid-row: 4;
 }
 
-.secondary-column__four-column .content__three {
-  overflow-y: scroll;
-}
-
 .content__one, .content__two, .content__three {
   display: none;
 }
@@ -110,5 +106,10 @@ content-header {
 article-body .evaluation-summary__link {
   color: #087acc;
   border-bottom: 1px dotted #087acc;
+}
+
+.secondary-column__four-column .content__two, .secondary-column__four-column .content__three {
+  overflow-y: auto;
+  height: 100vh;
 }
 
