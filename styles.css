@@ -414,6 +414,7 @@ figure {
   }
 }
 .article-details {
+  margin-top: 48px;
   padding-bottom: 100px;
   overflow-y: auto;
   position: sticky;
