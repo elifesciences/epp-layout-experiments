@@ -120,7 +120,8 @@ img {
   font-size: 36px;
   line-height: 48px;
 }
-.article-body h2 {
+
+h2 {
   color: rgb(33, 33, 33);
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -447,9 +448,9 @@ figure {
 }
 
 .article-status__heading {
-  color: #cf0c4e;
+  color: #087acc;
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 22px;
   margin-top: 0;
@@ -904,8 +905,14 @@ figure {
   color: #087acc;
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  margin: 0 6px 0 0;
+  font-weight: 600;
+  margin: 0 12px 0 0;
   padding: 3px 10px;
+}
+
+.msa_item a {
+  color: #087acc;
+  font-weight: 600;
 }
 
 .label_item {
@@ -913,12 +920,14 @@ figure {
   color: #212121;
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  margin: 0 6px 0 0;
+  font-weight: 600;
+  margin: 0 12px 0 0;
   padding: 3px 10px;
 }
 
 .label_item a {
   color: #212121;
+  font-weight: 600;
 }
 
 .msa_item:last-child {
