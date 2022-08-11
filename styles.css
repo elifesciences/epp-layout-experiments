@@ -502,8 +502,6 @@ figure {
 
 .review-timeline {
   border-bottom: 1px solid rgb(224, 224, 224);
-  margin-top: 24px;
-  padding-bottom: 24px;
 }
 
 .secondary-column__four-column .review-timeline {
@@ -536,22 +534,33 @@ figure {
   color: rgb(33, 33, 33);
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 24px;
   flex-basis: 100%;
   font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.review-timeline__event:last-of-type {
   margin: 0;
 }
+
 @media only all and (min-width: 1296px) {
   .review-timeline__event {
     flex-basis: 50%;
   }
 }
 
+.review-timeline__event a {
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+}
+
 .review-timeline__date {
   color: rgb(33, 33, 33);
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 12px;
+  line-height: 24px;
   color: rgb(118, 118, 118);
   flex-basis: 100%;
   margin: 0;
