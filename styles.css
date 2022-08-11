@@ -1016,6 +1016,7 @@ figure {
 
 .misc-navigation__block-item {
   background-color: #087acc;
+  border-radius: 3px;
   color: #fff;
   padding: 3px 8px;
   text-transform: uppercase;
@@ -1026,9 +1027,9 @@ figure {
 }
 
 .misc-navigation__block-item .button__submit {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 table {
