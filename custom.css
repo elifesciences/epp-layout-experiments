@@ -113,3 +113,9 @@ article-body .evaluation-summary__link {
   height: 100vh;
 }
 
+.border {
+  border-top: 1px solid rgb(224, 224, 224);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
