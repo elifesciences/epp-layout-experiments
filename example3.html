@@ -129,7 +129,7 @@
 
           <nav class="jump-menu-container">
             <ul class="jump-menu-list">
-              <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#evaluation-summary">Evaluation summary</a></li>
+              <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#evaluation-summary">Evaluation</a></li>
               <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#abstract">Abstract</a></li>
               <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#s1">Introduction</a></li>
               <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#s2">Analysis</a></li>
@@ -142,7 +142,7 @@
         <div class="main-content-area">
           <div class="article-body">
           <section class="evaluation-summary">
-            <h2 class="evaluation-summary__header" id="evaluation-summary">Evaluation summary</h2>
+            <h2 class="evaluation-summary__header" id="evaluation-summary">Evaluation</h2>
             <p>This is a <a href="" class="evaluation-summary__link">landmark paper</a> that is methodologically <a href="" class="evaluation-summary__link">exceptional</a> - a tour-de-force - that ties together decades of advances in electron microscopy to produce a dataset of both breadth and extreme technical quality whose very existence will have profound and lasting influence on neuroscience. The atlas of the fruit-fly brain is an invaluable reference for experimentalists and a springboard for theoreticians and modelers. The manuscript is extensive and well-illustrated, and the data, methods and analyses are made available to the community in an exemplary manner. The work represents ambitious, large-scale biological resource generation at its apotheosis.</p>
             <ul class="evaluation-summary-links">
               <li class="evaluation-summary-links__item"><a class="evaluation-summary-links__item_link" href="/article/10.1101/2020.04.07.030213/reviews">Read the full peer reviews</a></li>
@@ -3721,9 +3721,11 @@
 
             <nav class="jump-menu-container">
               <ul class="jump-menu-list">
-                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#evaluation-summary">Editors</a></li>
-                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#abstract">Reviewer 1</a></li>
-                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#s1">Reviewer 2</a></li>
+                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#evaluation-summary">Evaluation</a></li>
+                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#editors-and-reviewers">Editors</a></li>
+                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#review-1">Review 1</a></li>
+                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#review-2">Review 2</a></li>
+                <li class="jump-menu-list__item"><a class="jump-menu-list__link" href="#author-response">Author response</a></li>
               </ul>
             </nav>
 
@@ -3732,6 +3734,16 @@
           <div>
       
 <section class="editors-and-reviewers">
+   <div class="summary">
+        <h2 class="summary-title" id="evaluation-summary">Evaluation</h2>
+
+        <h3>Landmark</h3>
+        <p class="summary-text">Findings with profound implications and widespread influence, which are likely to be of broad interest.</p>
+
+        <h3>Exceptional</h3>
+        <p class="summary-text">Exemplary use of existing and new methods that establishes new standards for a field.</p>
+
+      </div>
   <h2 class="editors-and-reviewers__header" id="editors-and-reviewers">Editors</h2>
   <ul class="editors-and-reviewers__list">
     <li class="editors-and-reviewers__person">
@@ -3747,84 +3759,39 @@
   </ul>
 </section>
 
-      <ul class="review-list">
-          <li class="review-list__item"><article class="review-list-content">No reviews found</article></li>
+     <ul class="review-list">
+          <li class="review-list__item"><article class="review-list-content" id="review-1"><p><strong>Reviewer 1</strong></p>
+            <p>The work presented by Scheffer et al. here is a tour de force achievement on several fronts. Technologically, it ties together nearly a decade of advances in sample preparation, imaging, data management, and image analysis. Most impressively, this represents – to my knowledge – the densest and most complete automated reconstruction of an EM volume of this size. While at least one larger volume has been generated from the adult fly brain (Davi Bock's TEMCA work), it has not been segmented (yet) to the level of completion presented here. (Though I am curious to hear the authors' thoughts on to what extent the overall automated segmentation strategy used herein is truly dependent on the isotropic voxels or if a similar set of networks could be retrained on anisotropic data from other existing volumes. One can imagine the value in validating connectivity in another sample that's already been imaged.)</p>
+
+        <p>The completeness of the hemibrain connectome enables the authors to carefully begin the process of labeling subregions of the neuropil, derive cell types on the basis of both structure and connectivity, and identify circuit motifs. They also show that the segmented skeletons enable a first pass at building detailed neuronal models at the single-cell level. Therefore this work is not just the presentation of a volume of data (itself impressive) but also a demonstration of what connectomics has always promised to deliver: a reference atlas for biologists and a springboard for theoreticians and modelers working anywhere between the single-cell and whole network levels.</p>
+
+<p></p>I have no major critiques of this manuscript. Some of the figures could be more striking – or at least not set to Matlab defaults in terms of colors and box ticks (Figures 17, 20, 21 and 25). Others are beautiful (Figures 8 and 10, e.g.).</p>
+
+<p></p>Finally, I commend the authors for building out the online portal for others to interact with their data. This is an achievement on its own, and probably the most important one for yielding the greatest scientific returns from their efforts.</p></article></li>
+        <li class="review-list__item"><article class="review-list-content" id="review-2"><p><strong>Reviewer 2</strong></p>
+        <p>This massive work describes new methods for generating EM data on large chunks of nervous system – 250 x 250 μm adult central brain – which includes all of one side of the bilateral brain plus all of the central brain midline structures such as the central complex. Thus, it has an n = 1 for most brain neurons. It excludes most of the optic lobe, and all of the ascending/descending neurons, SEZ and VNC. The paper contains comprehensive analyses of the data set, including motif structure, classifying cell types, and adjusting brain neuropil boundaries. The Neuprint software is elegant and intuitive.</p>
+
+<p>Importantly, this data set and associated software provide a method to transition from a light level neuron morphology (e.g. from a FlyLight neuron to a Neuprint neuron). While this needs further development (see comment below), it has the potential to save years of experimental analysis to reach the same point.</p>
+
+<p>This data set will be the gold standard until the full CNS reconstruction is finished in the future. The quality of the EM data are extremely high based on images shown and data in Neuroglancer. As mentioned above, this is a massive work in many regards.</p>
+
+<p>My only required major comment is to expand the section "Matching EM and light microscopy data" as this is an extremely important advance, and perhaps one of the most useful aspects of the entire manuscript. I think the most useful improvement would be to give an example from beginning (FlyLight neuron) to end (matching neuron in Neuprint). This can be another figure, or perhaps better as a numbered text instructions with full URLs for each required step. Or a third option, provide an example workflow on a Janelia page and link to it here. As it stands, I was unable to perform this function with the available information in the paper.
+</p></article></li>
+  <li class="review-list__item"><article class="review-list-content" id="author-response"><p><strong>Author Response:</strong></p>
+    <blockquote>
+      <p>Reviewer #1:</p>
+      <p>I have no major critiques of this manuscript. Some of the figures could be more striking – or at least not set to Matlab defaults in terms of colors and box ticks (Figures 17, 20, 21 and 25). Others are beautiful (Figures 8 and 10, e.g.).</p>
+    </blockquote>
+    <p>We will work to improve the colors and backgrounds to be clearer, and use color-blind friendly colors. We hope these will also be more striking.</p>
+
+    <blockquote>
+      <p>Reviewer #2:</p>
+      <p>My only required major comment is to expand the section "Matching EM and light microscopy data" as this is an extremely important advance, and perhaps one of the most useful aspects of the entire manuscript. I think the most useful improvement would be to give an example from beginning (FlyLight neuron) to end (matching neuron in Neuprint). This can be another figure, or perhaps better as a numbered text instructions with full URLs for each required step. Or a third option, provide an example workflow on a Janelia page and link to it here. As it stands, I was unable to perform this function with the available information in the paper.</p>
+    </blockquote>
+    <p>We completely agree with this comment – this is one of the most useful things to do with the data, and it was not easy upon our initial data release. We will work to address this.</p>
+    <p>There will be a separate paper on this process, with more examples and description of the algorithms. For example, when going from EM to light, it’s helpful if the software can create a search mask to help pull the specific neuron out of a not-so-sparse GAL4 line. When going from light to EM, the similarity function needs to know that only a portion of a brain-spanning neuron can be expected to match, and so on. Unfortunately, this paper is not out yet, even in bioRxiv form, so we cannot cite it. We are encouraging the authors to get this out as quickly as possible. Meanwhile we describe the process, and at least point out there is an upcoming paper.</p>
+  </li>
       </ul>
-    </div>
-    <div class="article-section__body">
-      <div class="decision-letter-header">
-    <ol class="listing-list">
-        <li class="listing-list__item">
-          <div class="profile-snippet">
-            <div class="profile-snippet__container clearfix">
-          
-              <div class="profile-snippet__name">Eve Marder</div>
-              <div class="profile-snippet__title">Reviewing Editor; Brandeis University, United States</div>
-            </div>
-          </div>
-        </li>
-        <li class="listing-list__item">
-          <div class="profile-snippet">
-            <div class="profile-snippet__container clearfix">
-          
-              <div class="profile-snippet__name">Michael B Eisen</div>
-              <div class="profile-snippet__title">Senior Editor; University of California, Berkeley, United States</div>
-            </div>
-          </div>
-        </li>
-        <li class="listing-list__item">
-          <div class="profile-snippet">
-            <div class="profile-snippet__container clearfix">
-          
-              <div class="profile-snippet__name">Jason Pipkin</div>
-              <div class="profile-snippet__title">Reviewer; Brandeis University, United States</div>
-            </div>
-          </div>
-        </li>
-        <li class="listing-list__item">
-          <div class="profile-snippet">
-            <div class="profile-snippet__container clearfix">
-          
-              <div class="profile-snippet__name">Chris Q Doe</div>
-              <div class="profile-snippet__title">Reviewer; Howard Hughes Medical Institute, University of Oregon, United States</div>
-            </div>
-          </div>
-        </li>
-    </ol>
-
-    
-  <div class="decision-letter-header__main_text"><p class="paragraph">In the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.</p>
-</div>
-</div>
-<p class="paragraph"><b>Acceptance summary:</b></p>
-<p class="paragraph">We consider this work to be a tour de force achievement on several fronts. Technologically, it ties together nearly a decade of advances in sample preparation, imaging, data management, and image analysis. It also is a very complete automated reconstruction of an EM volume that allows the authors to carefully begin the process of labeling subregions of the neuropil, derive cell types on the basis of both structure and connectivity, and identify circuit motifs, and is a demonstration of what connectomics has always promised to deliver: a reference atlas for biologists and a springboard for theoreticians and modelers working anywhere between the single-cell and whole network levels. We anticipate that this paper and its tools will facilitate the work from numerous laboratories around the world.</p>
-<p class="paragraph"><b>Decision letter after peer review:</b></p>
-<p class="paragraph">Thank you for submitting your article "A Connectome and Analysis of the Adult <i>Drosophila</i> Central Brain" for consideration by <i>eLife</i>. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Eisen as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jason Pipkin (Reviewer #1) and Chris Q Doe (Reviewer #2).</p>
-<p class="paragraph">The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.</p>
-<p class="paragraph">We would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as <i>eLife</i> papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.</p>
-<p class="paragraph">Summary:</p>
-<p class="paragraph">This paper is viewed as a landmark contribution to the methodologies of EM connectomics and its use to characterize the <i>Drosophila</i> brain. The manuscript is extensive and well-illustrated, and the reviewers and editors are pleased to help to make this work available to the public. I am taking the unusual (for <i>eLife</i>) action to include the two reviewers in their entirety, as they include constructive comments that were intended by these two careful readers to make the paper more accessible and more useful for the community. I hope that you will take into consideration these comments, and make those editorial changes that will strengthen the paper. In particular, reviewer 2's major request for additional information seems critical for the paper to be maximally useful to the community,</p>
-<p class="paragraph">Title: Reviewer 2 suggests a change in the title for your consideration.</p>
-<p class="paragraph"><i>Reviewer #1:</i></p>
-<p class="paragraph">The work presented by Scheffer et al. here is a tour de force achievement on several fronts. Technologically, it ties together nearly a decade of advances in sample preparation, imaging, data management, and image analysis. Most impressively, this represents – to my knowledge – the densest and most complete automated reconstruction of an EM volume of this size. While at least one larger volume has been generated from the adult fly brain (Davi Bock's TEMCA work), it has not been segmented (yet) to the level of completion presented here. (Though I am curious to hear the authors' thoughts on to what extent the overall automated segmentation strategy used herein is truly dependent on the isotropic voxels or if a similar set of networks could be retrained on anisotropic data from other existing volumes. One can imagine the value in validating connectivity in another sample that's already been imaged.)</p>
-<p class="paragraph">The completeness of the hemibrain connectome enables the authors to carefully begin the process of labeling subregions of the neuropil, derive cell types on the basis of both structure and connectivity, and identify circuit motifs. They also show that the segmented skeletons enable a first pass at building detailed neuronal models at the single-cell level. Therefore this work is not just the presentation of a volume of data (itself impressive) but also a demonstration of what connectomics has always promised to deliver: a reference atlas for biologists and a springboard for theoreticians and modelers working anywhere between the single-cell and whole network levels.</p>
-<p class="paragraph">I have no major critiques of this manuscript. Some of the figures could be more striking – or at least not set to Matlab defaults in terms of colors and box ticks (Figures 17, 20, 21 and 25). Others are beautiful (Figures 8 and 10, e.g.).</p>
-<p class="paragraph">Finally, I commend the authors for building out the online portal for others to interact with their data. This is an achievement on its own, and probably the most important one for yielding the greatest scientific returns from their efforts.</p>
-<p class="paragraph"><i>Reviewer #2:</i></p>
-<p class="paragraph">This massive work describes new methods for generating EM data on large chunks of nervous system – 250 x 250 μm adult central brain – which includes all of one side of the bilateral brain plus all of the central brain midline structures such as the central complex. Thus, it has an n = 1 for most brain neurons. It excludes most of the optic lobe, and all of the ascending/descending neurons, SEZ and VNC. The paper contains comprehensive analyses of the data set, including motif structure, classifying cell types, and adjusting brain neuropil boundaries. The Neuprint software is elegant and intuitive.</p>
-<p class="paragraph">Importantly, this data set and associated software provide a method to transition from a light level neuron morphology (e.g. from a FlyLight neuron to a Neuprint neuron). While this needs further development (see comment below), it has the potential to save years of experimental analysis to reach the same point.</p>
-<p class="paragraph">This data set will be the gold standard until the full CNS reconstruction is finished in the future. The quality of the EM data are extremely high based on images shown and data in Neuroglancer. As mentioned above, this is a massive work in many regards.</p>
-<p class="paragraph">My only required major comment is to expand the section "Matching EM and light microscopy data" as this is an extremely important advance, and perhaps one of the most useful aspects of the entire manuscript. I think the most useful improvement would be to give an example from beginning (FlyLight neuron) to end (matching neuron in Neuprint). This can be another figure, or perhaps better as a numbered text instructions with full URLs for each required step. Or a third option, provide an example workflow on a Janelia page and link to it here. As it stands, I was unable to perform this function with the available information in the paper.</p>
-
-
-
-
-      <span class="doi doi--article-section">
-          <a href="https://doi.org/10.7554/eLife.57443.sa1" class="doi__link" data-behaviour-initialised="true">
-        https://doi.org/10.7554/eLife.57443.sa1
-          </a>
-      </span>
-
   </div>
         </div>
         </div>
@@ -3849,11 +3816,11 @@
             </div>
             <div class="review-timeline">
               <dl class="review-timeline__list">
-                <dt class="review-timeline__event">Author response<a href="">Read response</a></dt>
+                <dt class="review-timeline__event">Author response<a href="#author-response">Read response</a></dt>
                 <dd class="review-timeline__date">Mar 6, 2022</dd>
-                <dt class="review-timeline__event">Peer review<a href="">Read reviews</a></dt>
+                <dt class="review-timeline__event">Peer review<a href="#review-1">Read reviews</a></dt>
                 <dd class="review-timeline__date">Mar 3, 2022</dd>
-                <dt class="review-timeline__event">Preprint posted<a href="">Go to preprint</a></dt>
+                <dt class="review-timeline__event">Preprint posted<a href="https://www.biorxiv.org/content/10.1101/2020.04.07.030213v1">Go to preprint</a></dt>
                 <dd class="review-timeline__date">Nov 8, 2021</dd>
               </dl>
             </div>
