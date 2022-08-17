@@ -739,9 +739,13 @@ figure {
   list-style: none;
 }
 
+.review-list {
+  padding: 0;
+}
+
 .review-list__item {
+  list-style: none;
   padding-top: 2rem;
-  border-bottom: 1px solid black;
 }
 
 .review-list__item:first-child {
@@ -768,7 +772,7 @@ figure {
 .review-list-content blockquote p, .review-list-content blockquote li {
   color: rgb(33, 33, 33);
   font-family: Noto Sans, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: rgb(118, 118, 118);
 }
