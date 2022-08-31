@@ -52,18 +52,6 @@ function tabThreeFunction() {
   contentThree.classList.add('show');
 }
 
-const authorResponse = document.querySelector('.author-response-js');
-authorResponse.addEventListener('click', function(event) {
-  console.log('test');
-  tabThreeFunction();
-});
-
-const reviews = document.querySelector('.review-js');
-reviews.addEventListener('click', function(event) {
-  console.log('test2');
-  tabThreeFunction();
-});
-
 document.addEventListener('scroll', function() {
   const evaluationPosition = document.querySelector('.evaluation-summary__header');
   let bounding = evaluationPosition.getBoundingClientRect();
@@ -76,3 +64,16 @@ document.addEventListener('scroll', function() {
     reviewTimeline.classList.remove('hide');
   };
 })
+
+const authorResponse = document.querySelector('.author-response-js');
+authorResponse.addEventListener('click', function() {
+  console.log('test');
+  tabThreeFunction();
+});
+
+document.querySelectorAll('.review-js').forEach(item => {
+  item.addEventListener('click', event => {
+    console.log('test2');
+    tabThreeFunction();
+  });
+});

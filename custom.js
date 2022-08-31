@@ -51,13 +51,14 @@ function tabThreeFunction() {
 }
 
 const authorResponse = document.querySelector('.author-response-js');
-authorResponse.addEventListener('click', function(event) {
+authorResponse.addEventListener('click', function() {
   console.log('test');
   tabThreeFunction();
 });
 
-const reviews = document.querySelector('.review-js');
-reviews.addEventListener('click', function(event) {
-  console.log('test2');
-  tabThreeFunction();
+document.querySelectorAll('.review-js').forEach(item => {
+  item.addEventListener('click', event => {
+    console.log('test2');
+    tabThreeFunction();
+  });
 });
