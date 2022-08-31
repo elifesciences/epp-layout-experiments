@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-const articleHeadings = document.querySelectorAll('h2[data-itemtype="http://schema.stenci.la/Heading"], h2[itemtype="http://schema.stenci.la/Heading"], h2.evaluation-summary__header, h2.peer-review');
+const articleHeadings = document.querySelectorAll('h2[data-itemtype="http://schema.stenci.la/Heading"], h2[itemtype="http://schema.stenci.la/Heading"], h2.evaluation-summary__header, h2.peer-review, h2.author-response');
 
 let throttleTimer;
 
